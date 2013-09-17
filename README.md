@@ -1,12 +1,11 @@
 andrew-austin.com
 =================
 
-My homepage.
+The pelican theme for andrew-austin.com.
 
 Todo
 -----
-* Replace social icons with text
-* Right align that text
-* Increase title size
+* Read custom settings from pelican settings for github/flickr/etc
 * Refactor pages into base.html and index.html
-* Remove Friends and Publications and link to them instead.
+* Make sure individual pages are themed
+* Clean up unused CSS
