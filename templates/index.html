@@ -25,15 +25,17 @@
         <img src='{{ SITEURL}}/theme/images/andrew-austin.jpg' style='float:left;width:120px;height:120px;padding:5px 10px 5px 0;'/>
         <h3>Hi.</h3>
         <p>
-My name is <b>Andrew Austin</b> and I'm a javascript and python developer. You can find some of my code on <a href="https://github.com/andrewaustin">github</a>. I graduated with a masters degree in computer science from <a href="http://www.ncsu.edu">NCSU</a> in 2011. I am currently a frontend developer at IBM.
+My name is <b>Andrew Austin</b> and I'm a javascript and python developer. You can find some of my code on <a href="https://github.com/andrewaustin">github</a>. I graduated with a masters degree in computer science from <a href="http://www.ncsu.edu">NCSU</a> in 2011. I am currently a developer at IBM.
 </p>
 <br/>
 <h4>Writing</h4>
+    <div class="articles">
     {% for article in articles_page.object_list %}
     <a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark" title="Permalink to {{ article.title|striptags }}">{{ article.title }}</a><br/>
     {% endfor %}
  <br/>
-<br clear="all" />
+ <br clear="all" />
+    </div>
     </div>
 		<div class="copyright">
         	        	            <p>&copy; Andrew Austin </p>
