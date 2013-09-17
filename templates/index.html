@@ -1,8 +1,9 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>Andrew Austin</title>
+<title>{% block title %}Andrew Austin{% endblock%}</title>
 <link rel="stylesheet" href="{{ SITEURL }}/theme/css/style.css" type="text/css" />
+<link rel="stylesheet" href="{{ SITEURL }}/theme/css/colorful.css" type="text/css" />
 <meta name="description" content="Andrew Austin; I write software." />
 <meta name="keywords" content="Andrew, Austin, AndrewAustin, Andrew-Austin, Andrew Austin" />
 </head>
@@ -10,7 +11,7 @@
 <body>
 <div class="container">
 	<div class="header">
-        <h1><span id="site_title">Andrew Austin</span>
+        <h1><span id="site_title"><a href="http://andrew-austin.com">Andrew Austin</a></span>
                                 <span class="icons">
                                     <a href="https://github.com/andrewaustin"><img src='{{ SITEURL }}/theme/images/icons/github.png' /></a>
                                     <a href="http://www.linkedin.com/in/andrewdaustin/"><img src='{{ SITEURL }}/theme/images/icons/linkedin.png' /></a>
@@ -21,7 +22,7 @@
                             </h1>
 	</div>
 	<div class="content">
-
+        {% block content %}
         <img src='{{ SITEURL}}/theme/images/andrew-austin.jpg' style='float:left;width:120px;height:120px;padding:5px 10px 5px 0;'/>
         <h3>Hi.</h3>
         <p>
@@ -31,11 +32,12 @@ My name is <b>Andrew Austin</b> and I'm a javascript and python developer. You c
 <h4>Writing</h4>
     <div class="articles">
     {% for article in articles_page.object_list %}
-    <a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark" title="Permalink to {{ article.title|striptags }}">{{ article.title }}</a><br/>
+    <a href="{{ SITEURL }}/{{ article.url }}" title="{{ article.title|striptags }}">{{ article.title }}</a><br/>
     {% endfor %}
  <br/>
  <br clear="all" />
     </div>
+    {% endblock %}
     </div>
 		<div class="copyright">
         	        	            <p>&copy; Andrew Austin </p>
