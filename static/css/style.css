@@ -109,16 +109,16 @@ h4 {
 
 /* indexMaps */
 
-.indexMap p a { font-weight:bold }
+.content p a { font-weight:bold }
 
-.indexMap {
+.content {
     border-bottom: 1px;
 	padding:18px 0 0 0;
 	text-align:left;
     width:500px;
 }
 
-.indexMap h4 {
+.content h4 {
     font-size: 26px;
     margin: 25px 0 10px 0;
 }
@@ -135,11 +135,11 @@ p.byline {
     color: #555;
 }
 
-.indexMap IMG {
+.content IMG {
 	border:0px solid #000;
 }
 
-.indexMap IMG.noline {
+.content IMG.noline {
 	border:0;
 }
 
