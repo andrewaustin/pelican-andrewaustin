@@ -125,6 +125,11 @@ h4 {
 	border:0px solid #000;
 }
 
+.post-info {
+    font-size:10px;
+    text-align:right;
+}
+
 /* FOOTER */
 
 .footer {
