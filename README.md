@@ -1,11 +1,6 @@
 andrew-austin.com
 =================
 
-The pelican theme for andrew-austin.com.
+The pelican theme for andrew-austin.com. Has a lot of ugly hardcoded CSS, and
+the template is not very reusable.
 
-Todo
------
-* Read custom settings from pelican settings for github/flickr/etc
-* Refactor pages into base.html and index.html
-* Make sure individual pages are themed
-* Clean up unused CSS
